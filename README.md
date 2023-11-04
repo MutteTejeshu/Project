@@ -1,4 +1,4 @@
-### Procedure followed to run lottery scheduler in xv6
+# Procedure followed to run lottery scheduler in xv6
 ## Setup
 
 Initially, to get the docker container up and running, install docker desktop on your PC.
@@ -66,7 +66,7 @@ init             1       SLEEPING        2       10
 ```
 
 
-### Nice command
+# Nice command
 
 To allocate priorities to the processes use the nice command with the syntax specifiede below,
 ```bash
@@ -104,13 +104,13 @@ init     1       SLEEPING        2       10
  simpleprog      6       SLEEPING        10      10 
 ```
 
-### Pseudo random number generator
+# Pseudo random number generator
 To test the prng and receive 1000 random numbers run the below command
 ```bash
 $ testprng
 ```
 
-### Lottery scheduler
+# Lottery scheduler
 ## WHEN SWITCHING SCHEDULING POLICY ALWAYS RUN THE BELOW COMMAND
 If you are already in the xv6 OS, first exit the xv6 OS using Ctrl+A and immediately press X
 
@@ -142,7 +142,7 @@ init     1       SLEEPING        2       10
 
 ## To test lottery scheduler, run the below test cases
 
-# ltest
+### ltest
 ```bash
 $ ltest
 starting test at 1 hours 49 minutes 15 seconds
@@ -150,13 +150,13 @@ spin with spin with 20 tickets ended at 1 hours 49 minutes 15 seconds
 80 tickets ended at 1 hours 49 minutes 15 seconds
 ```
 
-# ltest1
+### ltest1
 ```bash
 $ ltest1
 All child processes with equal number of tickets have completed their tasks.
 ```
 
-# ltest2
+### ltest2
 ```bash
 $ ltest2
 Child 2 (Tickets: 30) has completed its custom tasks
